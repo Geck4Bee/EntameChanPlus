@@ -6,4 +6,4 @@ node_modules/
 index.html
 dist/
 static/favicon.ico
-languages/
+/languages/
