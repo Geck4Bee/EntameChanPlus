@@ -30,7 +30,7 @@
       </v-layout>
       <video v-if='embed_video' @volumechange='updateVolume' @loadeddata='afterLoadingMedia' style='max-width: 100%' autoplay controls loop>
         <source :src='original' :type='file.type'>
-        Your browser does not support the video tag
+        ブラウザがビデオタグに対応していません
       </video>
       <a v-else-if='file.thumb && !always_spoiler' @click.prevent='embed_video = true' :href='original'>
         <v-lazy>
@@ -49,7 +49,7 @@
         </a>
         <audio v-if='embed_audio' @volumechange='updateVolume' @loadeddata='afterLoadingMedia' controls>
           <source :src='original' :type='file.type'>
-          Your browser does not support the audio tag
+          ブラウザがオーディオタグに対応していません
         </audio>
       </div>
     </template>
