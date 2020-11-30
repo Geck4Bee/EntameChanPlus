@@ -24,7 +24,7 @@ export class Config {
 	readonly default_audio_image = "static/audio.png";
 	readonly default_spoiler_image = "static/spoiler.png";
 	readonly default_options_image = "static/options.png";
-	readonly logo = "static/logo.svg";
+	readonly logo = "static/logo.png";
 	readonly fallback_logo = "static/logo.png";
 	readonly video_thumbnail_position = 0.1;
 	readonly thumbnail_quality = 90;

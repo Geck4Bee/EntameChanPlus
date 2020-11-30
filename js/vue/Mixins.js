@@ -334,7 +334,7 @@ export const renderMixin = {
       store.commit("setThreads", [])
       store.commit("setPosts", [])
       Millchan.cmd("wrapperPushState", [{"search":""}, "Millchan", ""])
-      Millchan.cmd("wrapperSetTitle", "Millchan - ZeroNet");
+      Millchan.cmd("wrapperSetTitle", "EntameChanPlus - ZeroNet");
       Millchan.routes["home"](null, this.$store.state.local_storage);
       this.$vuetify.goTo(0, {duration: 0})
     },
