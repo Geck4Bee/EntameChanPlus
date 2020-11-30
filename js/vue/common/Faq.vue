@@ -2,32 +2,32 @@
 <div class='overlay-mask' @click='$root._data.show_faq = false'>
 	<div class='overlay-content'>
 		<div id='menu-content'>
-			<h4 class='faq-question'>I'm always getting a notification saying 'Generating anonymous certificate' when I try to post</h4>
-			<span class='faq-answer'>Delete the 'millchan' certificate in /ZeroNet/data/users.json, save and restart ZeroNet.</span>
+			<h4 class='faq-question'>投稿しようとすると、いつも'Generating anonymous certificate' という通知が表示される</h4>
+			<span class='faq-answer'>'millchan'の証明書を /ZeroNet/data/users.json から削除して, ZeroNetを再起動してください.</span>
 			<hr class='question-hr'/>
-			<h4 class='faq-question'>Someone posted something that I do not like!
-				<br/>Can you delete it?
+			<h4 class='faq-question'>このレス気に食わねぇ!
+				<br/>削除できる?
 			</h4>
-			<span class='faq-answer'>I can't. Only you can control the content that you're seeing.
-				<br/> There are tools for filtering content that you do not want to see/seed.
-				<br/>Use them. 
+			<span class='faq-answer'>管理人からはできません. 自分が見ているコンテンツをコントロールできるのは自分だけです.
+				<br/> 見たくないコンテンツをフィルタリングするためのツールがあります.
+				<br/>使ってください. 
 			</span>
 			<hr class='question-hr'/>
-			<h4 class='faq-question'>How to 
-				<i>unmute</i> muted users?
+			<h4 class='faq-question'>ユーザーの
+				<i>ミュート解除</i> ミュートってできる？
 			</h4>
-			<span class='faq-answer'>Go to 
-				<a href='http://127.0.0.1:43110/1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D/'>ZeroHello</a> and in the "three dots" next to the logo click <br/>
-				<strong>"Manage muted users"</strong>. 
+			<span class='faq-answer'> 
+				<a href='http://127.0.0.1:43110/1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D/'>ZeroHello</a> に行ってロゴの横にある「3つの点」をクリックしてください <br/>
+				<strong>"ミュートユーザーの管理ができます"</strong>. 
 			</span>
 			<hr class='question-hr'/>
-			<h4 class='faq-question'>Which filetypes are allowed?</h4>
+			<h4 class='faq-question'>どの拡張子が許可されてる?</h4>
 			<span class='faq-answer'>
 				<ul class='ma-2'>
-					<li v-for='type in allowed_types'>{{type}}</li>
+					<li v-for='(type, index) in allowed_types' :key="index">{{type}}</li>
 				</ul>
 			</span>
-			<v-btn small @click='$root.show_faq=false'>Close</v-btn>
+			<v-btn small @click='$root.show_faq=false'>閉じる</v-btn>
 		</div>
 	</div>
 </div>

@@ -12,7 +12,7 @@
 						<input v-else type='range' min='0' max='0.95' step='0.05' :value='value' @change='local_storage.config[key] = parseFloat($event.target.value)' />
 					</div>
 					<span style='font-size:11px;color:black;'>
-						<a @click.prevent='selectUser'>Select certificate</a>
+						<a @click.prevent='selectUser'>認証IDの選択</a>
 					</span>
 				</fieldset>
 				<fieldset v-if='local_blacklist.boards && local_blacklist.boards.length'>
