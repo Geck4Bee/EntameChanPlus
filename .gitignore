@@ -1,0 +1,9 @@
+.project
+.settings
+data
+content.json
+node_modules/
+index.html
+dist/
+static/favicon.ico
+languages/

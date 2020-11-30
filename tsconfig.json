@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "lib": ["dom", "webworker", "es2017.object", "es2018.promise"],
+        "module": "es2015",
+        "target": "es5",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": false,
+        "strict": true,
+        "moduleResolution": "node",
+        "baseUrl": "js",
+        "paths": {
+            "Util": ["util"]
+        }
+    }
+}
